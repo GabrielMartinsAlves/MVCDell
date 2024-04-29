@@ -27,3 +27,37 @@
 <img src="MVC.drawio.png" width="100%" > <br>
 <sup>Fonte: Material elaborado pelo autor (2024)</sup>
 </div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Para o desenvolvimento do projeto, optamos por uma arquitetura baseada em Node.js com o framework Sails.js, fundamentada na eficiência e escalabilidade do Node.js para operações intensivas de I/O. O Sails.js foi escolhido por sua robustez e pelas convenções de desenvolvimento que oferece, especialmente adequadas para a criação de APIs RESTful e integração com o banco de dados PostgreSQL.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**PostgreSQL como Sistema de Gerenciamento de Banco de Dados (SGBD):**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A escolha do PostgreSQL como SGBD se justifica pela sua robustez, confiabilidade e capacidade de escalabilidade. Além disso, o PostgreSQL oferece suporte a recursos avançados, como transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade) e índices avançados, que são essenciais para garantir a integridade e a consistência dos dados em ambientes de aplicativos críticos.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Front-end: HTML5, CSS3, Bootstrap e JavaScript:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;No que diz respeito ao desenvolvimento do front-end, optamos por utilizar as tecnologias HTML5, CSS3, Bootstrap e JavaScript. Essa escolha foi baseada na ampla adoção e familiaridade com essas tecnologias, permitindo a criação de uma interface de usuário intuitiva e responsiva. Além disso, a utilização dessas tecnologias facilita a manutenção e testabilidade do sistema, garantindo uma experiência consistente e agradável para os usuários.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Node.js com Sails.js:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A escolha do Node.js com o framework Sails.js para o backend oferece uma estrutura organizada e predefinida para o desenvolvimento de aplicativos web e APIs RESTful. Node.js é ideal para operações de entrada/saída intensivas, enquanto o Sails.js facilita o desenvolvimento ao fornecer convenções e estruturas predefinidas para as operações comuns de uma aplicação web.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Sistema de Cache:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A implementação de um sistema de cache é essencial para melhorar o desempenho da aplicação, armazenando conteúdos frequentemente acessados e reduzindo a carga nos servidores. Dentro do padrão MVC, o sistema de cache pode ser considerado uma extensão do Modelo, auxiliando os controladores na recuperação eficiente de dados para apresentação nas Views.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Serviço de Armazenamento de Arquivos:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;Um serviço de armazenamento de arquivos interno da Dell é empregado para armazenar documentos, imagens, vídeos e outros recursos associados aos cursos da aplicação. Dentro do padrão MVC, esse serviço complementa o Modelo, permitindo o armazenamento e a recuperação de arquivos conforme necessário pelos controladores para apresentação aos usuários.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**API de Single Sign-On (SSO):**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A integração de um sistema de Single Sign-On (SSO) da Dell por meio de uma API possibilita aos usuários autenticarem-se na aplicação usando as credenciais de suas contas corporativas. Essa integração simplifica o processo de login, tornando-o mais conveniente para os usuários. Na arquitetura MVC, essa API desempenha um papel vital no controle de acesso, gerenciando a autenticação dos usuários antes de direcioná-los para as ações apropriadas dos controladores.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Serviço de Notificações:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;A integração de um serviço de notificações, como o Amazon SES ou Firebase Cloud Messaging, permite o envio de informações relevantes aos usuários sobre atualizações nos cursos e outras atividades pertinentes. Dentro do padrão MVC, esse serviço complementa o fluxo de controle, permitindo que os controladores despachem notificações conforme necessário para os usuários, especialmente quando há atualizações nos materiais do curso.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Microsserviços e Containers:**
+&nbsp;&nbsp;&nbsp;&nbsp;A arquitetura baseada em microsserviços e containers, implementada com tecnologias como Docker e Kubernetes, oferece escalabilidade e flexibilidade à aplicação. Cada microsserviço pode ser considerado uma parte do Modelo ou Controlador, dependendo de sua função na aplicação.
